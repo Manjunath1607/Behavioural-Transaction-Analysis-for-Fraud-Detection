@@ -1,68 +1,60 @@
 # Behavioural Transaction Analysis for Fraud Detection
 
-This project applies the Lean Six Sigma DMAIC framework to improve the fraud detection process in financial transactions using behavioral anomaly analysis.
+A Lean Six Sigma Black Belt project applying the DMAIC methodology to enhance fraud detection accuracy by analyzing transactional behavior in a synthetic dataset of 5 million financial records.
 
 ---
 
-## 📌 Project Overview
+## 📌 Project Summary
 
-**Objective:** Improve fraud detection accuracy by identifying key behavioral indicators and minimizing missed frauds (false negatives) in a synthetic financial transaction dataset of 5 million records.
-
-**Methodology:**  
-Lean Six Sigma DMAIC  
-- Define  
-- Measure  
-- Analyze  
-- Improve  
-- Control
+This project aims to reduce missed frauds (false negatives) by identifying and quantifying behavioral indicators such as velocity spikes, spending deviations, device shifts, and geo-anomalies. Using non-parametric statistical analysis and control charts, the process was improved to achieve higher fraud detection performance and greater stability.
 
 ---
 
-## 📊 Dataset
+## 📂 Project Contents
 
-- **Size:** 5 million synthetic financial transactions  
-- **Features:**  
-  - `velocity_score`, `spending_deviation_score`, `geo_anomaly_score`  
-  - Transaction time, location, device info, payment channel, fraud label
+- `/presentation/` : PowerPoint slides detailing each phase of the DMAIC framework  
+- `README.md` : Summary of project purpose, methodology, and insights  
 
 ---
 
-## 📈 Key Findings
+## 📊 Key Highlights
 
-- `velocity_score` and `geo_anomaly_score` are **strong indicators** of fraud (Mann-Whitney U test, p < 0.005)  
-- **Process improvement raised fraud detection score** from 85 to 96.3  
-- Reduced variation and all post-improvement metrics within control limits  
-- Independent contributions confirmed via Spearman correlation
-
----
-
-## 🛠 Tools & Techniques Used
-
-- Anderson-Darling Normality Test  
-- Mann-Whitney U Test  
-- Spearman Correlation  
-- Fishbone Diagram, SIPOC, CTQ Tree  
-- I-MR Control Charts (Before vs. After)
+- Improved fraud detection score from **~85 to 96.3**  
+- Used **Mann-Whitney U Test** for non-normal metrics (e.g., `velocity_score`)  
+- Identified `velocity_score` and `geo_anomaly_score` as statistically significant fraud indicators  
+- Implemented process control to maintain sustainability through periodic retraining and alerts  
 
 ---
 
-## 📂 Project Artifacts
+## 🛠 Tools & Techniques
 
-- [Financial Fraud Detection – Project Presentation (PPTX)](./Financial%20Fraud%20Detection.pptx)  
-- [Problem Description](./problem%20description.docx)
-
----
-
-## 🧠 Reflection
-
-This project showcases end-to-end process improvement using data-driven behavioral analytics in the finance domain. It highlights capabilities in fraud pattern recognition, root cause analysis, and sustainable control design.
+- DMAIC Framework  
+- Anderson-Darling Test  
+- Mann-Whitney U & Spearman Correlation  
+- SIPOC, Fishbone Diagram, CTQ Tree  
+- I-MR Control Charts (Before vs. After)  
 
 ---
 
-## 📌 Next Steps
+## 📜 License
 
-- Incorporate machine learning models for enhanced detection  
-- Build a real-time monitoring dashboard (Tableau / Power BI)  
-- Compare performance against industry benchmarks
+MIT License – reuse permitted with attribution.
+
+---
+
+## ✒️ Attribution
+
+**K.S. Manjunath created this project** as part of his Lean Six Sigma **Black Belt** learning journey.  
+All content, analysis, and methodology reflect original work using simulated financial data.  
+Feel free to reference or build upon this project — just remember to credit the author.  
+Unauthorized replication or plagiarism is discouraged and may result in takedown action.
+
+---
+
+## 🔗 Next Steps (Optional Ideas)
+
+- Integrate machine learning for real-time fraud prediction  
+- Develop a dashboard for live fraud monitoring  
+- Compare detection rate against industry benchmarks  
 
 ---
