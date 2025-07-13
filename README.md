@@ -1,38 +1,41 @@
 # Behavioural Transaction Analysis for Fraud Detection
 
-A Lean Six Sigma Black Belt project applying the DMAIC methodology to enhance fraud detection accuracy by analyzing transactional behavior in a synthetic dataset of 5 million financial records.
+A Lean Six Sigma Black Belt project applying the DMAIC methodology to enhance fraud detection accuracy by analyzing behavioral transaction patterns in a 10,000-record sample from a synthetic dataset of 1 million financial records.
 
 ---
 
 ## 📌 Project Summary
 
-This project aims to reduce missed frauds (false negatives) by identifying and quantifying behavioral indicators such as velocity spikes, spending deviations, device shifts, and geo-anomalies. Using non-parametric statistical analysis and control charts, the process was improved to achieve higher fraud detection performance and greater stability.
+This project aims to reduce missed frauds (false negatives) by identifying key behavioral indicators such as transaction velocity, spending anomalies, geo-location mismatches, and device/IP changes. Using non-parametric hypothesis testing and control charts, the team implemented improvements that significantly enhanced detection accuracy and process stability.
 
 ---
 
 ## 📂 Project Contents
 
-- `/presentation/` : PowerPoint slides detailing each phase of the DMAIC framework  
-- `README.md` : Summary of project purpose, methodology, and insights  
+- `/presentation/`: PowerPoint slides detailing the full DMAIC journey  
+- `README.md`: Summary of methodology, statistical tools used, and outcomes  
 
 ---
 
 ## 📊 Key Highlights
 
-- Improved fraud detection score from **~85 to 96.3**  
-- Used **Mann-Whitney U Test** for non-normal metrics (e.g., `velocity_score`)  
-- Identified `velocity_score` and `geo_anomaly_score` as statistically significant fraud indicators  
-- Implemented process control to maintain sustainability through periodic retraining and alerts  
+- Used a **10,000-transaction sample** from a larger synthetic 5M-record dataset  
+- Identified `velocity_score` and `geo_anomaly_score` as statistically significant indicators (p < 0.005)  
+- Improved detection score from **~85 to 96.3** after implementing control rules  
+- Reduced variation; post-improvement results showed all points within control limits  
+- Root causes included erratic velocity, abnormal spending, device/IP changes, and high geo-anomaly scores
 
 ---
 
 ## 🛠 Tools & Techniques
 
 - DMAIC Framework  
-- Anderson-Darling Test  
-- Mann-Whitney U & Spearman Correlation  
-- SIPOC, Fishbone Diagram, CTQ Tree  
+- Anderson-Darling Normality Test  
+- Mann-Whitney U Test  
+- Spearman Correlation Analysis  
+- SIPOC, CTQ Tree, Fishbone Diagram  
 - I-MR Control Charts (Before vs. After)  
+- Baseline & post-improvement comparison dashboards  
 
 ---
 
@@ -45,16 +48,17 @@ MIT License – reuse permitted with attribution.
 ## ✒️ Attribution
 
 **K.S. Manjunath created this project** as part of his Lean Six Sigma **Black Belt** learning journey.  
-All content, analysis, and methodology reflect original work using simulated financial data.  
-Feel free to reference or build upon this project — just remember to credit the author.  
-Unauthorized replication or plagiarism is discouraged and may result in takedown action.
+All content, analysis, and structure reflect original work using simulated data.  
+You are welcome to reference or build upon this work, but please give appropriate credit.  
+Plagiarism or unauthorized replication is discouraged and may result in takedown reporting.
 
 ---
 
-## 🔗 Next Steps (Optional Ideas)
+## 🔗 Next Steps (Optional)
 
-- Integrate machine learning for real-time fraud prediction  
-- Develop a dashboard for live fraud monitoring  
-- Compare detection rate against industry benchmarks  
+- Integrate ML algorithms for real-time fraud detection  
+- Extend analysis to the full 1M-record dataset  
+- Build automated dashboards for continuous monitoring  
+- Benchmark detection performance against industry solutions  
 
 ---
